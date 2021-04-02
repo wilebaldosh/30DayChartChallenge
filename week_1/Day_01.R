@@ -1,4 +1,6 @@
 # Reto: 30DayChartChallenge ####
+# Semana 1: Comparisons
+# Día 1: part-to-whole
 # Adolescente de 12 a 14 años que no asisten a la escuela
 # De acuerdo a los datos el censo 2020 del INEGI
 
@@ -42,7 +44,7 @@ escolar %>%
   geom_col() +
   geom_text(aes(y = label_y, label = format(porcentaje, digits = 4)), hjust = 2, colour = "white") +
   coord_flip() +
-  scale_fill_manual("Género", values = c("#01BFC4", "#AA2FF7")) +
+  scale_fill_manual("Género:", values = c("#01BFC4", "#AA2FF7")) +
   guides(fill = guide_legend(reverse = TRUE)) +
   theme_light() +
   labs(
@@ -50,7 +52,7 @@ escolar %>%
     subtitle = "(%) Mujeres y hombres, por entidad federativa",
     y = "%",
     x = "Entidad federativa",
-    caption = "Fuente: INEGI: Censo de Población y Vivienda 2020. Elaborado por @willshDev\n
+    caption = "Fuente: INEGI: Censo de Población y Vivienda 2020. Elaborado por el Profr. Wilebaldo Santana (@willshDev)\n
 Chiapas es la única entidad donde las mujeres asisten menos que los hombres."
   ) +
   theme(
