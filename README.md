@@ -5,3 +5,4 @@ Week 1: Comparisions.
 |:-:|:-:|:-:|
 | 1 | part-to-whole | Done |
 | 2 | pictogram | Done |
+| 3 | historical | Done |
