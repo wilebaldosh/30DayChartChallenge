@@ -84,4 +84,4 @@ ggplot(alumnos, aes(label = genero,
 
 
 # Guardamos el Pictograma ####
-ggsave("reports/figures/day_2.png", height = 10, width = 12)
+ggsave("reports/figures/day_02.png", height = 10, width = 12)

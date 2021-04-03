@@ -66,4 +66,4 @@ Chiapas es la única entidad donde las mujeres asisten menos que los hombres."
   geom_hline(yintercept = 50, size = .5, linetype = "dotted")
 
 # Guardamos el gráfico ####
-ggsave("reports/figures/day_1.png", height = 10, width = 20)
+ggsave("reports/figures/day_01.png", height = 10, width = 20)
