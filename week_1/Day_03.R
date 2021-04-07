@@ -33,8 +33,12 @@ peso <- rbind(dolar, euro)
 ggplot(peso, aes(x = fecha, y = valor)) +
   geom_area(aes(color = Moneda, fill = Moneda),
             alpha = 0.5, position = position_dodge(0.8))+
-  scale_color_manual(values = c("#000000", "#FF0000")) +
-  #scale_fill_manual(values = c("#00AFBB", "#DB3E2A")) +
+  scale_color_manual(name = NULL,
+                     values = c("#000000", "#FF0000"),
+                     labels =c("Dolar", "Euro")) +
+  scale_fill_manual(name = NULL,
+                    values = c("#00AFBB", "#DB3E2A"),
+                    labels =c("Dolar", "Euro")) +
   theme_light() +
   labs(
     title = "Tipo de cambio del dolar y el euro frente al peso",
